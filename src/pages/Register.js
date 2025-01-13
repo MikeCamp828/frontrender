@@ -13,7 +13,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/register', {
+      const response = await axios.post('https://magiarender-2.onrender.com/api/auth/register', {
         nombre,
         email,
         password,

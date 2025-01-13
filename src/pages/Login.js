@@ -13,7 +13,7 @@ function Login() {
 
     try {
       // Supongamos que tienes un endpoint de autenticación en tu backend
-      const response = await axios.post('http://localhost:3000/api/auth/login', { email, password });
+      const response = await axios.post('https://magiarender-2.onrender.com/api/auth/login', { email, password });
 
       if (response.status === 200) {
         console.log('Inicio de sesión exitoso:', response.data);

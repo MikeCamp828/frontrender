@@ -21,7 +21,7 @@ function Pueblos() {
   useEffect(() => {
     const fetchPueblos = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/pueblos');
+        const response = await axios.get('https://magiarender-2.onrender.com/api/pueblos');
         setPueblos(response.data);
       } catch (error) {
         console.error('Error fetching pueblos:', error);
@@ -56,7 +56,7 @@ function Pueblos() {
         generations: Number(formData.generations),
         mutationRate: parseFloat(formData.mutationRate),
       };
-      const response = await axios.post('http://localhost:3000/api/algoritmo/ruta-optima', payload);
+      const response = await axios.post('https://magiarender-2.onrender.com/api/algoritmo/ruta-optima', payload);
       setRoute(response.data.mejorRuta || []);
       setDistanciaTotal(response.data.distanciaTotal || null);
       setStep(3); // Avanzar al paso 3

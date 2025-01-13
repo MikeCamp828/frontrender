@@ -14,10 +14,10 @@ function Reseñas() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const pueblosResponse = await axios.get('http://localhost:3000/api/pueblos'); // Ruta para obtener pueblos
+        const pueblosResponse = await axios.get('https://magiarender-2.onrender.com/api/pueblos'); // Ruta para obtener pueblos
         setPueblos(pueblosResponse.data);
 
-        const reseñasResponse = await axios.get('http://localhost:3000/api/calificaciones'); // Ruta para obtener reseñas
+        const reseñasResponse = await axios.get('https://magiarender-2.onrender.com/api/calificaciones'); // Ruta para obtener reseñas
         setReseñas(reseñasResponse.data);
       } catch (error) {
         console.error('Error al cargar datos:', error);
@@ -38,7 +38,7 @@ function Reseñas() {
         comentario,
       };
 
-      const response = await axios.post('http://localhost:3000/api/calificaciones/calificacion', nuevaReseña); // Ruta para guardar reseñas
+      const response = await axios.post('https://magiarender-2.onrender.com/api/calificaciones/calificacion', nuevaReseña); // Ruta para guardar reseñas
       setReseñas([...reseñas, response.data.calificacion]); // Actualizar la lista local
 
       // Limpiar el formulario
