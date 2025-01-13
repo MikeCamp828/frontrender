@@ -1,0 +1,85 @@
+.reseñas-container {
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    background: url('https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2022/03/04132718/Vuelos-en-Globo-Teotihuacan.jpg') no-repeat center center; /* Cambia esta URL por la imagen que desees */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Asegúrate de que el texto sea visible sobre el fondo */
+  }
+  
+  form {
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el formulario */
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #fff; /* Color blanco para el texto */
+  }
+  
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .general-reseñas-title {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* Blanco para el título */
+  }
+  
+  .general-reseñas-list {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .reseña-item {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reseña-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+  
+  .reseña-item p {
+    margin: 5px 0;
+    color: #000; /* Color negro para el texto dentro de los elementos */
+  }
+  

@@ -1,0 +1,251 @@
+/* General layout */
+.inicio-container {
+    background: linear-gradient(135deg, rgba(36, 35, 35, 0.9), rgba(0, 0, 0, 0.7)), url('https://retofotomexico.com/wp-content/uploads/formidable/3/cIELOS.jpg'); /* Cambia la URL a tu imagen */
+    background-size: cover;
+    background-position: center;
+    min-height: 150vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Fuente más moderna */
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px; /* Espaciado superior para evitar que los elementos se amontonen */
+}
+
+/* Header (logos y navegación) */
+.header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 10;
+}
+
+.logo-ipn, .logo-escom {
+    height: 125px; /* Ajusta el tamaño de los logos */
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.header a:hover {
+    color: #1e90ff; /* Azul brillante */
+}
+
+/* Título principal */
+.inicio-container h1 {
+    font-size: 3.5rem;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    animation: bounce 2s infinite; /* Movimiento del título */
+    color: #9b42db; /* Dorado */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Subtítulos */
+.inicio-container h2 {
+    font-size: 1.8rem;
+    color: #1e90ff; /* Azul brillante */
+    margin: 20px 0 10px;
+}
+
+/* Texto */
+.inicio-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    max-width: 800px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Lista de valores */
+.inicio-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+.inicio-container ul li {
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Logo principal rotación y animación tamaño */
+.logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.logo-pm {
+    animation: spin 4s linear infinite; /* Animación de rotación */
+}
+
+.logo-logoo {
+    animation: scalePulse 2s infinite; /* Crecimiento y reducción */
+    height: 350px;
+    width: 350px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scalePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid #1e90ff;
+    color: #1e90ff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #1e90ff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Contacto y Redes Sociales */
+.contact-section {
+    margin-top: 30px; /* Separación respecto al resto del contenido */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.contact-section a {
+    color: #1e90ff;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #ffd700;
+}
+
+/* Apartado de Integrantes */
+.integrantes-section {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap; /* Acomoda los integrantes en filas */
+    justify-content: center;
+    gap: 20px;
+}
+
+.integrantes-section .integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 200px; /* Ajusta el ancho para mantener consistencia */
+}
+
+.integrantes-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #1e90ff;
+    margin-bottom: 10px;
+}
+
+.integrantes-section h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #ffd700;
+}
+
+.integrantes-section p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Footer con Copyright */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 20px; /* Espaciado respecto al contenido */
+}
+
+/* Animaciones adicionales */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

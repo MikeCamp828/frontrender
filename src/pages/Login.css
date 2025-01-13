@@ -1,0 +1,126 @@
+/* General layout */
+.login-page {
+    background-image: url('https://pueblosmagicos.mexicodesconocido.com.mx/wp-content/uploads/2023/09/Ixtapan_Jardin-Central-y-Parroquia_HMmd.gif'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page .login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    text-align: center; /* Centrar el contenido */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    animation: fadeIn 1s ease; /* Animación al cargar */
+}
+
+/* Título del login */
+.login-page .login-container h1 {
+    font-size: 2rem;
+    color: #6a0dad; /* Morado moderno */
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', cursive; /* Fuente cursiva elegante */
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Formulario */
+.login-page .form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.login-page .form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-page .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-page .form-control:focus {
+    border-color: #6a0dad;
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+}
+
+/* Botón principal */
+.login-page .btn-primary {
+    background-color: #6a0dad; /* Color morado */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-page .btn-primary:hover {
+    background-color: #8e44ad; /* Morado más claro */
+    transform: scale(1.05); /* Pequeño efecto de zoom */
+}
+
+/* Botón de enlace */
+.login-page .btn-link {
+    background: none;
+    border: none;
+    color: #6a0dad;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-page .btn-link:hover {
+    color: #8e44ad;
+}
+
+/* Mensaje debajo del formulario */
+.login-page .login-container p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .login-page .login-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .login-page .login-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-page .form-control {
+        font-size: 0.9rem;
+    }
+}
